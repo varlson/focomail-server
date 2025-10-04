@@ -20,6 +20,9 @@ app.add_middleware(
     allow_methods=["*"],          # pode restringir ex: ["GET", "POST"]
     allow_headers=["*"],          # headers permitidos
 )
-
-
 app.include_router(emailClassifierRouter, prefix="/api")
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
