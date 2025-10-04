@@ -9,6 +9,10 @@ origins = [
 ]
 
 app = FastAPI(title= "This is a server for FocoMail application")
+@app.get("/")
+def helloWorld():
+    return {"hello": "Hello world"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,        # quem pode acessar
