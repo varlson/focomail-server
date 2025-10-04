@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 origins = [
     "http://localhost:3000",  # frontend local
     "http://127.0.0.1:3000",
-    "https://focomail.vercel.app/",    # produção
+    "https://focomail.vercel.app",    # produção
 ]
 
 app = FastAPI(title= "This is a server for FocoMail application")
