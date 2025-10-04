@@ -1,0 +1,1 @@
+from app.schemas.emailClassifer.email_schemas import EmailClassiferResponse
