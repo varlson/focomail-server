@@ -8,25 +8,30 @@
 ## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/focomail-server.git
+git clone git@github.com:varlson/focomail-server.git
 cd focomail-server
 python -m venv venv
 source venv/bin/activate  # No Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+## Variaveis de ambiente
+
+crie um arquivo `.env`
+copie de `env.example` nomes das variaveis
+preencha os valores de acordo com suas informações
+
 ## Executando a API
 
+Para execuatar este projeto, digite seguintes comandos:
+
 ```bash
-uvicorn main:app --reload
+- cd focomail-server
+- uvicorn app.main:app --reload
+
 ```
 
-- Acesse: [http://localhost:8000](http://localhost:8000)
-
-## Estrutura básica
-
-- `main.py`: Arquivo principal da aplicação FastAPI.
-- `requirements.txt`: Dependências do projeto.
+- Acesse: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ## Observações
 
